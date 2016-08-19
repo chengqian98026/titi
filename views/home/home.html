@@ -1,0 +1,103 @@
+<ion-view id="home">
+    <!--<ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>-->
+    <ion-nav-title>
+        <ion-header-bar class="item-input-inset">
+            <i class="ion-ios-location-outline"></i>
+            &nbsp;北京&nbsp;
+            <label class="item-input-wrapper" style="border-radius:22px;">
+                <input style="height:20%;" type="search" placeholder="搜索城市" ng-model="searchContent">
+            </label>
+            <button class="button button-clear button-icon icon ion-navicon" menu-toggle="right" ></button>
+        </ion-header-bar>
+    </ion-nav-title>
+    <ion-content>
+        <ion-slide-box auto-play="true" does-continue="true" show-pager="false">
+            <ion-slide>
+                <div><img style="width:100%;display: block" src="images/cq.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div><img style="width:100%;display: block" src="images/lj.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div><img style="width:100%;display: block" src="images/xb.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="cttr">
+            <div class="row">
+                <div class="col" style="text-align: center;" ui-sref="featureSpot">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#4b9fdf">
+                        <i class="ion-umbrella" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+                    <p>景点</p>
+                </div>
+                <div class="col" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#d84f7b">
+                        <i class="ion-ios-home-outline" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>酒店</p>
+                </div>
+                <div class="col" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#39d184">
+                        <i class="ion-android-bus" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>大巴</p>
+                </div>
+                <div class="col" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#487ddb">
+                        <i class="ion-android-plane" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>机票</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="text-align: center" ui-sref="delicacy">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#ff8528">
+                        <i class="ion-fork" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>美食</p>
+                </div>
+                <div class="col" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#1bb697">
+                        <i class="ion-map" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>地图</p>
+                </div>
+                <div class="col col-top" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#ea6b42">
+                        <i class="ion-compose" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>签证</p>
+                </div>
+                <div class="col" style="text-align: center">
+                    <span style="border-radius: 50%;width:50px;height:50px;display: inline-block;background:#e36557">
+                        <i class="ion-clipboard" style="color:#fff;font-size:2.5em;width:100%;line-height:50px; "></i>
+                    </span>
+
+                    <p>攻略</p>
+                </div>
+            </div>
+        </div>
+        <p class="stable-bg" style="color:#25dd87;height:30px;line-height:30px;padding-left:10px;">周边景色推荐</p>
+        <div>
+            <div class="row">
+                <div class="col col-33">
+                    <img style="width:100%" src="images/timg_03.jpg">
+                </div>
+                <div class="col col-33">
+                    <img style="width:100%" src="images/timg_05.jpg">
+                </div>
+                <div class="col col-33">
+                    <img style="width:100%" src="images/timg_07.jpg">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

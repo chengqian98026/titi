@@ -1,0 +1,14 @@
+#index .bar-balanced{background:#44c87d;border-color:#44c87d}
+#index .bar-balanced .title{left:5px;!important;}
+#delicacyr{background:#ccc;}
+#details table tr td{border: 1px #ccc solid;border-collapse: collapse;}
+#dressing .bar-subheader .row .col select{max-width:100%;border: none;color:#8b8b8b}
+#dressing .bar-subheader .row .col{text-align: center;}
+#dressing .scroll .disable-user-behavior .list .item{border: none}
+#entry{background:url("../images/dl-bg4.jpg") no-repeat top;background-size:100% 100%}
+#entry .scroll .item-input{background:rgba(220,220,220,0.4);}
+#entry .scroll .item{border: none; }
+#entry .scroll .item-input .input-label{color:#fff;}
+#entry .scroll .item-input input{color:#fff;}
+#entry .scroll .list-inset .button{background:rgba(220,220,220,0.4);color:#fff;}
+#entry .footer .row button{background:rgba(220,220,220,0.6);font-size:22px}

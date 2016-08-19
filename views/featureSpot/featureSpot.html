@@ -1,0 +1,14 @@
+<ion-view view-title="景点">
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="item in date">
+                <div ui-sref="featureSpotDetails"><img style="width:100%"ng-src="{{item.ImageUrl}}"/></div>
+                <p style="text-align: center;color:#49d993">{{item.name}}</p>
+            </ion-item>
+            <ion-infinite-scroll on-infinite="loadMore()"></ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

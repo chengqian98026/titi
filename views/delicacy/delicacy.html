@@ -1,0 +1,39 @@
+<ion-view view-title="美食" id="delicacyr">
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div><img style="width:100%;display:block" src="images/yizhiji_13.jpg"></div>
+        <ion-list>
+            <ion-item ng-repeat="item in date" class="light-bg item-thumbnail-left item-text-wrap" style="margin:10px 0;" ui-sref="delicacyDetails">
+                <img ng-src="{{item.iUrl}}"/>
+                <h2 style="color:#51c49b">{{item.name}}</h2>
+                <p>{{item.introduce}}</p>
+                <p style="color:#51c49b">优惠:<span style="color:#f53d5f">{{item.discount}}</span></p>
+                <p style="color:#51c49b">价格:<span style="color:#f53d5f">{{item.price}}</span></p>
+            </ion-item>
+            <!--<ion-item class="light-bg item-thumbnail-left item-text-wrap" style="margin:10px 0;" ui-sref="delicacyDetails">-->
+                <!--<img src="images/cai_17.jpg"/>-->
+                <!--<h2 style="color:#51c49b">麻婆豆腐</h2>-->
+                <!--<p>麻婆豆腐为川菜中经典佳肴。 要原料由豆腐构成。</p>-->
+                <!--<p style="color:#51c49b">优惠:<span style="color:#f53d5f">5折</span></p>-->
+                <!--<p style="color:#51c49b">价格:<span style="color:#f53d5f">13元</span></p>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="light-bg item-thumbnail-left item-text-wrap" style="margin:10px 0;" ui-sref="delicacyDetails">-->
+                <!--<img src="images/cai_20.jpg"/>-->
+                <!--<h2 style="color:#51c49b">京酱牛肉卷</h2>-->
+                <!--<p>京酱牛肉卷是一道汉族传统菜肴。</p>-->
+                <!--<p style="color:#51c49b">优惠:<span style="color:#f53d5f">3折</span></p>-->
+                <!--<p style="color:#51c49b">价格:<span style="color:#f53d5f">18元</span></p>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="light-bg item-thumbnail-left item-text-wrap" style="margin:10px 0;" ui-sref="delicacyDetails">-->
+                <!--<img src="images/cai_22.jpg"/>-->
+                <!--<h2 style="color:#51c49b">糖醋排骨</h2>-->
+                <!--<p>是糖醋味型中具有代表性的一道大众喜爱的汉族传统名菜。</p>-->
+                <!--<p style="color:#51c49b">优惠:<span style="color:#f53d5f">4折</span></p>-->
+                <!--<p style="color:#51c49b">价格:<span style="color:#f53d5f">18元</span></p>-->
+            <!--</ion-item>-->
+            <ion-infinite-scroll on-infinite="loadMore()"></ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>
